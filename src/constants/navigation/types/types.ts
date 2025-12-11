@@ -1,8 +1,8 @@
-import type { ComponentType, ReactNode } from "react";
+import type { ReactNode } from "react";
 
 type ChildrenType = {
   path: string;
-  component: ComponentType;
+  component: ReactNode;
   role: string;
 };
 export interface NavigationTypes {

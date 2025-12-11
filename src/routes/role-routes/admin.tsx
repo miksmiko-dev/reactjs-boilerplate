@@ -1,10 +1,10 @@
-import { navigation } from "@/constants/navigation/admin/admin-nav";
 import AdminPage from "@/pages/authenticated/admin/page";
 import Authguards from "../../components/molecules/guards/guards.tsx";
 import type { RouteObject } from "react-router-dom";
 import { Suspense } from "react";
 import Loading from "@/components/organism/loading/loading.tsx";
 import type { NavigationTypes } from "@/constants/navigation/types/types.ts";
+import { adminNav } from "@/constants/navigation/index.tsx";
 
 const AdminRoutes: RouteObject = {
   path: "/admin",
@@ -13,7 +13,7 @@ const AdminRoutes: RouteObject = {
       <AdminPage />
     </Authguards>
   ),
-  children: navigation.map((route: NavigationTypes) => ({
+  children: adminNav.map((route: NavigationTypes) => ({
     path: route.path,
     element: <Suspense fallback={<Loading />}>{route.component}</Suspense>,
   })),

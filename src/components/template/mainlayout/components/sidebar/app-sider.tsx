@@ -1,6 +1,8 @@
+import { Button } from "@/components/ui/button";
 import {
   Sidebar,
   SidebarContent,
+  SidebarFooter,
   SidebarHeader,
   SidebarMenu,
   SidebarMenuButton,
@@ -50,6 +52,14 @@ const AppSider = ({ filterNavigation }: AppSiderProps) => {
           )}
         </SidebarMenu>
       </SidebarContent>
+
+      <SidebarFooter>
+        <div className="pb-8 flex justify-center">
+          <Button variant={"secondary"} size={"sm"}>
+            Sign Out{" "}
+          </Button>
+        </div>
+      </SidebarFooter>
     </Sidebar>
   );
 };
