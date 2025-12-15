@@ -21,7 +21,7 @@ const MainLayout: React.FC<{ role: string }> = ({ role }) => {
           <AppSider filterNavigation={filterNavigation} />
           <div className="flex flex-1 flex-col h-full w-full">
             <Header />
-            <main className="flex-1 w-full overflow-auto space-y-4 p-8 pt-6 ">
+            <main className="flex-1 w-full overflow-auto space-y-4 p-8 pt-2 ">
               <Outlet />
             </main>
           </div>
