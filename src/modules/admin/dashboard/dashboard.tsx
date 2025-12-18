@@ -9,6 +9,7 @@ import { summaryData } from "../../../constants/dashboard-data";
 import { RecentSales, RevenueChart, SummaryCard } from "./components";
 
 const Dashboard = () => {
+  console.log("test");
   return (
     <div className="">
       <div className="flex items-center justify-between space-y-2">
